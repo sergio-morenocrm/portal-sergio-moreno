@@ -1,31 +1,260 @@
-rest]').forEach(a=>{
-a.addEventListener('click',()=>{
-document.getElementById('interesse').value=a.dataset.interest;
-});
-});
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#06182b">
+<title>Sergio Moreno | Consórcios Embracon</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;background:#06182b;color:white;line-height:1.6}
+.wrap{width:92%;max-width:1150px;margin:auto}
+header{background:#031326;border-bottom:3px solid #d71920;padding:18px 0}
+nav{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
+.logo{font-size:25px;font-weight:bold;color:#e2b64f}
+nav a{color:white;text-decoration:none;font-size:14px}
+.hero{padding:65px 0;background:linear-gradient(120deg,#06182b,#123d65)}
+h1{font-size:clamp(36px,6vw,58px);line-height:1.1;margin:15px 0}
+.gold{color:#e2b64f}
+p{color:#d5e0ec}
+.btn{display:inline-block;padding:14px 23px;background:#e2b64f;color:#07182b;text-decoration:none;font-weight:bold;border-radius:7px;margin:8px 5px 8px 0;border:0;cursor:pointer}
+.btn.red{background:#d71920;color:white}
+.hero-image{width:100%;height:390px;object-fit:cover;border-radius:14px;margin-top:25px;border:2px solid #e2b64f}
+section{padding:60px 0}
+h2{font-size:34px;line-height:1.2}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#0b2b4c;border:1px solid #b88d37;border-radius:12px;overflow:hidden}
+.card img{width:100%;height:190px;object-fit:cover}
+.card-content{padding:18px}
+.card h3{color:#e2b64f;margin:0}
+.card p{font-size:14px}
+.dark{background:#031326}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
+.about-box{padding:25px;background:#0b2b4c;border-radius:12px}
+ul li{margin:10px 0;color:#d5e0ec}
+.form{background:#0b2b4c;padding:25px;border-radius:12px;max-width:700px;margin:auto}
+label{display:block;margin-top:12px}
+input,select{width:100%;padding:13px;border-radius:6px;border:1px solid #ccc;font-size:16px;margin-top:5px}
+footer{padding:30px 0;background:#031326;text-align:center}
+.whatsapp{position:fixed;right:15px;bottom:15px;background:#16ad56;color:white;padding:14px 20px;border-radius:30px;text-decoration:none;font-weight:bold;z-index:10}
+.small{font-size:12px;color:#aebdca}
+@media(max-width:700px){
+.cards{grid-template-columns:1fr 1fr}
+.about{grid-template-columns:1fr}
+.hero-image{height:240px}
+nav{justify-content:center}
+nav a{font-size:12px}
+}
+@media(max-width:430px){
+.cards{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<nav>
+<div class="logo">SM | SERGIO MORENO</div>
+<a href="#inicio">Início</a>
+<a href="#solucoes">Consórcios</a>
+<a href="#como">Como funciona</a>
+<a href="#simulacao">Simule</a>
+<a href="#contato">Contato</a>
+</nav>
+</div>
+</header>
+
+<main>
+<section class="hero" id="inicio">
+<div class="wrap">
+<p class="gold"><b>ESPECIALISTA EM CONSÓRCIOS EMBRACON</b></p>
+<h1>Seu próximo grande projeto começa com <span class="gold">planejamento.</span></h1>
+<p>Consórcio para caminhões, agronegócio, máquinas agrícolas, imóveis e empresas. Conheça as possibilidades para realizar seus projetos.</p>
+<a class="btn red" href="#simulacao">QUERO MINHA SIMULAÇÃO</a>
+<a class="btn" href="#como">COMO FUNCIONA?</a>
+
+<img class="hero-image"
+src="https://images.unsplash.com/photo-1519003722824-194d4455a60d?auto=format&fit=crop&w=1400&q=85"
+alt="Caminhão de transporte rodoviário">
+</div>
+</section>
+
+<section id="solucoes">
+<div class="wrap">
+<h2>Nossas <span class="gold">soluções</span></h2>
+<p>Planejamento para diferentes objetivos pessoais e empresariais.</p>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519003722824-194d4455a60d?auto=format&fit=crop&w=800&q=80" alt="Caminhão">
+<div class="card-content">
+<h3>Caminhões</h3>
+<p>Renovação e ampliação de frota, caminhões e carretas.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1499529112087-3cb3b73bccb5?auto=format&fit=crop&w=800&q=80" alt="Agronegócio">
+<div class="card-content">
+<h3>Agronegócio</h3>
+<p>Planejamento para investimentos e crescimento no campo.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Máquinas agrícolas e campo">
+<div class="card-content">
+<h3>Máquinas agrícolas</h3>
+<p>Tratores, implementos e equipamentos agrícolas.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Imóvel">
+<div class="card-content">
+<h3>Imóveis</h3>
+<p>Casas, apartamentos, terrenos, construção e reforma.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80" alt="Empresa">
+<div class="card-content">
+<h3>Empresas (PJ)</h3>
+<p>Alternativas para projetos e expansão empresarial.</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Automóvel">
+<div class="card-content">
+<h3>Automóveis</h3>
+<p>Planeje a conquista do seu próximo veículo.</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="dark" id="como">
+<div class="wrap">
+<h2>Como funciona o <span class="gold">consórcio?</span></h2>
+<div class="about">
+<div class="about-box">
+<h3>1. Escolha seu objetivo</h3>
+<p>Defina o bem e o valor de crédito desejado.</p>
+<h3>2. Escolha seu plano</h3>
+<p>Avalie parcelas, prazo e condições contratuais.</p>
+<h3>3. Participe do grupo</h3>
+<p>Realize os pagamentos e participe das assembleias.</p>
+<h3>4. Contemplação</h3>
+<p>O crédito pode ser disponibilizado por sorteio ou lance, conforme as regras do grupo.</p>
+</div>
+<div class="about-box">
+<h2>Planejamento com transparência</h2>
+<ul>
+<li>Atendimento personalizado.</li>
+<li>Orientação sobre possibilidades de lance.</li>
+<li>Opções para pessoas físicas e empresas.</li>
+<li>Informações claras sobre taxas e condições.</li>
+</ul>
+<p class="small">A contemplação não é imediata nem garantida em data determinada. Consulte as condições do contrato.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="simulacao">
+<div class="wrap">
+<h2>Solicite sua <span class="gold">simulação</span></h2>
+<p>Preencha os dados e receba atendimento personalizado.</p>
+
+<div class="form">
+<form id="leadForm">
+<label>Nome completo</label>
+<input id="nome" required placeholder="Seu nome">
+
+<label>WhatsApp</label>
+<input id="telefone" required placeholder="Seu telefone">
+
+<label>Produto de interesse</label>
+<select id="produto">
+<option>Caminhões</option>
+<option>Agronegócio</option>
+<option>Máquinas agrícolas</option>
+<option>Imóveis</option>
+<option>Empresas PJ</option>
+<option>Automóveis</option>
+</select>
+
+<label>Valor aproximado do crédito</label>
+<input id="credito" placeholder="Ex.: R$ 300.000">
+
+<label>Cidade e estado</label>
+<input id="cidade" placeholder="Ex.: Campinas/SP">
+
+<button class="btn red" type="submit">ENVIAR SOLICITAÇÃO</button>
+</form>
+<p class="small">Ao enviar, você será direcionado ao WhatsApp para revisar e confirmar a mensagem.</p>
+</div>
+</div>
+</section>
+
+<section class="dark" id="contato">
+<div class="wrap about">
+<div>
+<h2>Sergio Moreno</h2>
+<h3 class="gold">Especialista em Consórcios Embracon</h3>
+<p>Atendimento consultivo para ajudar você a planejar suas conquistas e projetos.</p>
+</div>
+<div>
+<h2>Vamos conversar?</h2>
+<a class="btn" href="https://wa.me/5519993602700">FALAR COM SERGIO</a>
+<p>WhatsApp: (19) 99360-2700</p>
+<p>E-mail: sergio.moreno@embracon.com.br</p>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<b>SERGIO MORENO | CONSÓRCIOS EMBRACON</b>
+<p class="small">Consulte sempre as condições contratuais, taxas, reajustes e regras de contemplação.</p>
+</div>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5519993602700">WhatsApp</a>
+
+<script>
 document.getElementById('leadForm').addEventListener('submit',function(e){
 e.preventDefault();
 
-if(!document.getElementById('consentimento').checked){
-alert('Marque a autorização para continuar.');
-return;
-}
+const nome=document.getElementById('nome').value;
+const telefone=document.getElementById('telefone').value;
+const produto=document.getElementById('produto').value;
+const credito=document.getElementById('credito').value;
+const cidade=document.getElementById('cidade').value;
 
-const ids=['nome','telefone','perfil','cidade','interesse','credito','parcela','lance','detalhes'];
-const labels=['Nome','WhatsApp','Perfil','Cidade/UF','Objetivo','Valor aproximado do crédito','Parcela desejada','Intenção de lance','Detalhes'];
+const mensagem=
+'Olá Sergio! Meu nome é '+nome+
+'. Meu WhatsApp é '+telefone+
+'. Tenho interesse em '+produto+
+'. Crédito desejado: '+credito+
+'. Cidade: '+cidade+
+'. Gostaria de receber uma simulação.';
 
-let m='Olá Sergio! Vim pelo seu site e gostaria de conversar sobre consórcio.\n\n';
-
-ids.forEach((id,i)=>{
-let v=document.getElementById(id).value.trim();
-if(v)m+=labels[i]+': '+v+'\n';
-});
-
-m+='\nAutorizo o contato para atendimento desta solicitação.';
-
-window.open('https://wa.me/5519993602700?text='+encodeURIComponent(m),'_blank','noopener');
+window.open(
+'https://wa.me/5519993602700?text='+encodeURIComponent(mensagem),
+'_blank'
+);
 });
 </script>
+
 </body>
 </html>
