@@ -4,138 +4,221 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#06182b">
-<title>Sergio Moreno | Consórcios Embracon</title>
+<meta name="description" content="Consórcios para imóveis, veículos, caminhões, agronegócio e empresas com Sergio Moreno.">
+<meta name="theme-color" content="#07182b">
+<title>Sergio Moreno | Especialista em Consórcios</title>
 <style>
+:root {
+--navy:#07182b;
+--blue:#174c7c;
+--gold:#d8b36b;
+--ink:#172436;
+--muted:#657286;
+--paper:#f5f7fa;
+--green:#1eae63;
+}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,sans-serif;background:#06182b;color:white;line-height:1.6}
-.wrap{width:92%;max-width:1150px;margin:auto}
-header{background:#031326;border-bottom:3px solid #d71920;padding:18px 0}
-nav{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap}
-.logo{font-size:25px;font-weight:bold;color:#e2b64f}
-nav a{color:white;text-decoration:none;font-size:14px}
-.hero{padding:65px 0;background:linear-gradient(120deg,#06182b,#123d65)}
-h1{font-size:clamp(36px,6vw,58px);line-height:1.1;margin:15px 0}
-.gold{color:#e2b64f}
-p{color:#d5e0ec}
-.btn{display:inline-block;padding:14px 23px;background:#e2b64f;color:#07182b;text-decoration:none;font-weight:bold;border-radius:7px;margin:8px 5px 8px 0;border:0;cursor:pointer}
-.btn.red{background:#d71920;color:white}
-.hero-image{width:100%;height:390px;object-fit:cover;border-radius:14px;margin-top:25px;border:2px solid #e2b64f}
-section{padding:60px 0}
-h2{font-size:34px;line-height:1.2}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:#0b2b4c;border:1px solid #b88d37;border-radius:12px;overflow:hidden}
-.card img{width:100%;height:190px;object-fit:cover}
-.card-content{padding:18px}
-.card h3{color:#e2b64f;margin:0}
-.card p{font-size:14px}
-.dark{background:#031326}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
-.about-box{padding:25px;background:#0b2b4c;border-radius:12px}
-ul li{margin:10px 0;color:#d5e0ec}
-.form{background:#0b2b4c;padding:25px;border-radius:12px;max-width:700px;margin:auto}
-label{display:block;margin-top:12px}
-input,select{width:100%;padding:13px;border-radius:6px;border:1px solid #ccc;font-size:16px;margin-top:5px}
-footer{padding:30px 0;background:#031326;text-align:center}
-.whatsapp{position:fixed;right:15px;bottom:15px;background:#16ad56;color:white;padding:14px 20px;border-radius:30px;text-decoration:none;font-weight:bold;z-index:10}
-.small{font-size:12px;color:#aebdca}
-@media(max-width:700px){
-.cards{grid-template-columns:1fr 1fr}
-.about{grid-template-columns:1fr}
-.hero-image{height:240px}
-nav{justify-content:center}
-nav a{font-size:12px}
+body{margin:0;font-family:Arial,sans-serif;color:var(--ink);line-height:1.6}
+a{color:inherit}
+.wrap{width:min(1160px,92%);margin:auto}
+.top{background:#041222;color:white;padding:8px 0;font-size:12px}
+.top .wrap{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:10;background:#07182bf5;color:white}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{color:var(--gold);font-weight:bold;letter-spacing:.08em;text-decoration:none;font-size:20px}
+.brand small{display:block;color:white;font-size:9px;letter-spacing:.15em}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{text-decoration:none;font-size:13px;color:white}
+nav a:hover{color:var(--gold)}
+.btn{display:inline-block;text-decoration:none;font-weight:bold;border-radius:6px;padding:13px 19px;border:0;cursor:pointer}
+.gold{background:var(--gold);color:#172436}
+.outline{border:1px solid white;color:white}
+.hero{
+min-height:590px;
+display:flex;
+align-items:center;
+color:white;
+background:linear-gradient(90deg,#041120f2,#0a2746c9 60%,#0a274633),
+url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2000&q=85') center/cover;
 }
-@media(max-width:430px){
-.cards{grid-template-columns:1fr}
+.hero .wrap{padding:90px 0}
+.eyebrow,.kicker{color:var(--gold);font-size:12px;font-weight:bold;letter-spacing:.15em;text-transform:uppercase}
+.hero h1{font-size:clamp(38px,6vw,66px);line-height:1.05;max-width:760px;margin:18px 0}
+.hero p{font-size:18px;color:#e0e8f1;max-width:620px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.trust{position:relative;margin-top:-26px;background:white;padding:23px;border-radius:10px;box-shadow:0 10px 30px #07182b15;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.trust strong{display:block;font-size:14px}
+.trust span{font-size:12px;color:var(--muted)}
+section{padding:78px 0}
+.head{text-align:center;max-width:720px;margin:0 auto 35px}
+.head h2{font-size:clamp(28px,4vw,42px);line-height:1.12;color:var(--navy);margin:10px 0}
+.head p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.tile{height:285px;position:relative;border-radius:10px;overflow:hidden;color:white;background:#102d4d}
+.tile img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.tile:hover img{transform:scale(1.05)}
+.tile:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#031020ed,transparent 78%)}
+.tile div{position:absolute;z-index:1;bottom:0;padding:22px}
+.tile h3{margin:0 0 5px;font-size:22px}
+.tile p{font-size:13px;color:#e0e8f1}
+.tile a{color:var(--gold);font-size:12px;font-weight:bold;text-decoration:none}
+.dark{background:var(--navy);color:white}
+.dark .head h2{color:white}
+.dark .head p{color:#cbd6e2}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}
+.step{border:1px solid #ffffff25;border-radius:9px;padding:20px;background:#ffffff08}
+.step b{font-size:25px;color:var(--gold)}
+.step h3{font-size:16px}
+.step p{font-size:13px;color:#cbd6e2}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+.split img{width:100%;height:410px;object-fit:cover;border-radius:10px}
+.split h2{font-size:clamp(28px,4vw,42px);line-height:1.12;color:var(--navy)}
+.split p,.checks{color:var(--muted)}
+.checks li{margin:10px 0}
+.sim{background:var(--paper)}
+.simgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px}
+.intro{background:var(--navy);color:white;padding:28px;border-radius:10px}
+.intro p{color:#d1dce8;font-size:14px}
+.form{background:white;padding:28px;border-radius:10px;box-shadow:0 10px 30px #07182b0c}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.field{display:flex;flex-direction:column;gap:6px}
+.field.full{grid-column:1/-1}
+.field label{font-size:12px;font-weight:bold}
+.field input,.field select,.field textarea{padding:12px;border:1px solid #d5dde7;border-radius:6px;width:100%;font:inherit}
+.field textarea{min-height:80px}
+.consent{display:flex;gap:9px;font-size:12px;color:var(--muted);margin:16px 0}
+.note{font-size:11px;color:#778397}
+.about{max-width:850px;margin:auto;border:1px solid #e4e9ef;border-radius:10px;padding:28px;display:grid;grid-template-columns:135px 1fr;gap:25px;align-items:center}
+.avatar{height:130px;width:130px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#102d4d,#d8b36b);color:white;font-size:38px;font-weight:bold}
+.about h3{font-size:24px;color:var(--navy);margin:0}
+.faq{max-width:850px;margin:auto}
+.faq details{padding:17px 3px;border-bottom:1px solid #e2e7ed}
+.faq summary{font-weight:bold;color:var(--navy);cursor:pointer}
+.faq p{color:var(--muted);font-size:14px}
+.privacy{background:var(--paper)}
+.privacy p{max-width:850px;margin:auto;color:var(--muted);font-size:13px}
+.band{background:linear-gradient(110deg,#0b2440,#174c7c);color:white;text-align:center;padding:60px 15px}
+.band h2{font-size:clamp(27px,4vw,40px)}
+footer{background:#041222;color:white;padding:38px 0 22px}
+.footgrid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:25px}
+.footgrid p,.footgrid a{color:#c3cedb;font-size:13px}
+.footgrid a{display:block;text-decoration:none;margin:6px 0}
+.legal{border-top:1px solid #ffffff25;margin-top:25px;padding-top:17px;color:#aebccc;font-size:11px}
+.wa{position:fixed;right:18px;bottom:18px;background:var(--green);color:white;text-decoration:none;padding:13px 18px;border-radius:40px;font-weight:bold;z-index:20;box-shadow:0 5px 22px #0004}
+@media(max-width:850px){
+.steps{grid-template-columns:repeat(2,1fr)}
+.grid{grid-template-columns:repeat(2,1fr)}
+.simgrid{grid-template-columns:1fr}
+nav{gap:12px}
+}
+@media(max-width:600px){
+.nav{display:block;text-align:center;padding:13px 0}
+.brand{display:inline-block;margin-bottom:10px}
+nav{justify-content:center;gap:12px}
+nav a{font-size:11px}
+.hero{min-height:560px;background-position:60% center}
+.hero .wrap{padding:65px 0}
+.hero p{font-size:16px}
+.trust{grid-template-columns:1fr;padding:18px}
+.grid{gap:10px;grid-template-columns:1fr 1fr}
+.tile{height:225px}
+.tile div{padding:13px}
+.tile h3{font-size:17px}
+.tile p{font-size:11px}
+.steps{grid-template-columns:1fr}
+.split{grid-template-columns:1fr}
+.split img{height:260px}
+.fields{grid-template-columns:1fr}
+.field.full{grid-column:auto}
+.about{grid-template-columns:1fr;text-align:center}
+.avatar{margin:auto}
+.footgrid{grid-template-columns:1fr}
+section{padding:58px 0}
+.wa{right:11px;bottom:11px}
 }
 </style>
 </head>
 <body>
 
-<header>
+<div class="top">
 <div class="wrap">
+<span>Atendimento consultivo em consórcios</span>
+<span>Informação clara • Planejamento • Transparência</span>
+</div>
+</div>
+
+<header>
+<div class="wrap nav">
+<a class="brand" href="#inicio">SERGIO MORENO<small>ESPECIALISTA EM CONSÓRCIOS</small></a>
 <nav>
-<div class="logo">SM | SERGIO MORENO</div>
 <a href="#inicio">Início</a>
-<a href="#solucoes">Consórcios</a>
+<a href="#solucoes">Soluções</a>
 <a href="#como">Como funciona</a>
+<a href="#sobre">Sobre</a>
 <a href="#simulacao">Simule</a>
-<a href="#contato">Contato</a>
 </nav>
+<a class="btn gold" href="#simulacao">SOLICITAR ATENDIMENTO</a>
 </div>
 </header>
 
 <main>
 <section class="hero" id="inicio">
 <div class="wrap">
-<p class="gold"><b>ESPECIALISTA EM CONSÓRCIOS EMBRACON</b></p>
-<h1>Seu próximo grande projeto começa com <span class="gold">planejamento.</span></h1>
-<p>Consórcio para caminhões, agronegócio, máquinas agrícolas, imóveis e empresas. Conheça as possibilidades para realizar seus projetos.</p>
-<a class="btn red" href="#simulacao">QUERO MINHA SIMULAÇÃO</a>
-<a class="btn" href="#como">COMO FUNCIONA?</a>
-
-<img class="hero-image"
-src="https://images.unsplash.com/photo-1519003722824-194d4455a60d?auto=format&fit=crop&w=1400&q=85"
-alt="Caminhão de transporte rodoviário">
+<div class="eyebrow">Consórcio Embracon • Atendimento personalizado</div>
+<h1>Planeje hoje as conquistas que deseja realizar.</h1>
+<p>Conheça alternativas de consórcio para conquistar seu imóvel, trocar de veículo, investir no campo ou planejar a expansão da sua empresa.</p>
+<div class="actions">
+<a class="btn gold" href="#simulacao">QUERO UMA SIMULAÇÃO</a>
+<a class="btn outline" href="#como">ENTENDA COMO FUNCIONA</a>
+</div>
 </div>
 </section>
 
+<div class="wrap trust">
+<div><strong>Planejamento sob medida</strong><span>Opções alinhadas ao seu objetivo</span></div>
+<div><strong>Informação transparente</strong><span>Entenda custos, prazos e regras</span></div>
+<div><strong>Atendimento consultivo</strong><span>Converse diretamente com Sergio</span></div>
+</div>
+
 <section id="solucoes">
 <div class="wrap">
-<h2>Nossas <span class="gold">soluções</span></h2>
-<p>Planejamento para diferentes objetivos pessoais e empresariais.</p>
+<div class="head">
+<div class="kicker">Soluções por objetivo</div>
+<h2>Qual conquista está nos seus planos?</h2>
+<p>Explore as possibilidades e solicite uma conversa para avaliar o plano adequado ao seu projeto.</p>
+</div>
+<div class="grid">
 
-<div class="cards">
+<article class="tile">
+<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80" alt="Casa moderna">
+<div><h3>Imóveis</h3><p>Casas, apartamentos, terrenos, construção e reforma.</p><a href="#simulacao" data-interest="Imóvel">CONHEÇA AS OPÇÕES →</a></div>
+</article>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1519003722824-194d4455a60d?auto=format&fit=crop&w=800&q=80" alt="Caminhão">
-<div class="card-content">
-<h3>Caminhões</h3>
-<p>Renovação e ampliação de frota, caminhões e carretas.</p>
-</div>
-</div>
+<article class="tile">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Automóvel">
+<div><h3>Automóveis</h3><p>Planeje a compra do seu próximo carro ou utilitário.</p><a href="#simulacao" data-interest="Automóvel">CONHEÇA AS OPÇÕES →</a></div>
+</article>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1499529112087-3cb3b73bccb5?auto=format&fit=crop&w=800&q=80" alt="Agronegócio">
-<div class="card-content">
-<h3>Agronegócio</h3>
-<p>Planejamento para investimentos e crescimento no campo.</p>
-</div>
-</div>
+<article class="tile">
+<img src="https://images.unsplash.com/photo-1519003722824-194d4455a60d?auto=format&fit=crop&w=900&q=80" alt="Caminhão">
+<div><h3>Caminhões</h3><p>Alternativas para transportadores e renovação de frota.</p><a href="#simulacao" data-interest="Caminhão">CONHEÇA AS OPÇÕES →</a></div>
+</article>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Máquinas agrícolas e campo">
-<div class="card-content">
-<h3>Máquinas agrícolas</h3>
-<p>Tratores, implementos e equipamentos agrícolas.</p>
-</div>
-</div>
+<article class="tile">
+<img src="https://images.unsplash.com/photo-1499529112087-3cb3b73bccb5?auto=format&fit=crop&w=900&q=80" alt="Campo agrícola">
+<div><h3>Agronegócio</h3><p>Planejamento para máquinas e equipamentos agrícolas.</p><a href="#simulacao" data-interest="Máquinas agrícolas">CONHEÇA AS OPÇÕES →</a></div>
+</article>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80" alt="Imóvel">
-<div class="card-content">
-<h3>Imóveis</h3>
-<p>Casas, apartamentos, terrenos, construção e reforma.</p>
-</div>
-</div>
+<article class="tile">
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80" alt="Escritório">
+<div><h3>Empresas e PJ</h3><p>Projetos de expansão e formação de patrimônio.</p><a href="#simulacao" data-interest="Empresa / PJ">CONHEÇA AS OPÇÕES →</a></div>
+</article>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80" alt="Empresa">
-<div class="card-content">
-<h3>Empresas (PJ)</h3>
-<p>Alternativas para projetos e expansão empresarial.</p>
-</div>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="Automóvel">
-<div class="card-content">
-<h3>Automóveis</h3>
-<p>Planeje a conquista do seu próximo veículo.</p>
-</div>
-</div>
+<article class="tile">
+<img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=900&q=80" alt="Motocicleta">
+<div><h3>Motocicletas</h3><p>Organize a conquista da sua próxima moto.</p><a href="#simulacao" data-interest="Motocicleta">CONHEÇA AS OPÇÕES →</a></div>
+</article>
 
 </div>
 </div>
@@ -143,118 +226,193 @@ alt="Caminhão de transporte rodoviário">
 
 <section class="dark" id="como">
 <div class="wrap">
-<h2>Como funciona o <span class="gold">consórcio?</span></h2>
-<div class="about">
-<div class="about-box">
-<h3>1. Escolha seu objetivo</h3>
-<p>Defina o bem e o valor de crédito desejado.</p>
-<h3>2. Escolha seu plano</h3>
-<p>Avalie parcelas, prazo e condições contratuais.</p>
-<h3>3. Participe do grupo</h3>
-<p>Realize os pagamentos e participe das assembleias.</p>
-<h3>4. Contemplação</h3>
-<p>O crédito pode ser disponibilizado por sorteio ou lance, conforme as regras do grupo.</p>
+<div class="head">
+<div class="kicker">Entenda o processo</div>
+<h2>Como funciona o consórcio?</h2>
+<p>Uma modalidade de compra planejada em grupo, com regras e condições definidas em contrato.</p>
 </div>
-<div class="about-box">
-<h2>Planejamento com transparência</h2>
-<ul>
-<li>Atendimento personalizado.</li>
-<li>Orientação sobre possibilidades de lance.</li>
-<li>Opções para pessoas físicas e empresas.</li>
-<li>Informações claras sobre taxas e condições.</li>
+<div class="steps">
+<div class="step"><b>01</b><h3>Defina seu objetivo</h3><p>Escolha a categoria e o valor de crédito desejado.</p></div>
+<div class="step"><b>02</b><h3>Avalie o plano</h3><p>Compare prazo, parcelas, taxa de administração e encargos.</p></div>
+<div class="step"><b>03</b><h3>Participe do grupo</h3><p>Faça os pagamentos conforme as condições contratadas.</p></div>
+<div class="step"><b>04</b><h3>Concorra à contemplação</h3><p>Participe por sorteio ou lance, conforme as regras.</p></div>
+<div class="step"><b>05</b><h3>Use o crédito</h3><p>Após contemplação e análise, utilize conforme o contrato.</p></div>
+</div>
+<p style="text-align:center;color:#cbd6e2;font-size:12px;margin:24px auto 0;max-width:850px">A contemplação não é imediata nem garantida em data determinada. Ocorre por sorteio ou lance, conforme contrato, regras do grupo e disponibilidade financeira.</p>
+</div>
+</section>
+
+<section>
+<div class="wrap split">
+<img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=85" alt="Edifícios comerciais modernos">
+<div>
+<div class="kicker">Para pessoas e empresas</div>
+<h2>Uma estratégia de planejamento para diferentes fases da vida.</h2>
+<p>O consórcio pode ser considerado para objetivos pessoais e empresariais. O primeiro passo é entender o que você pretende conquistar e avaliar as condições do plano.</p>
+<ul class="checks">
+<li>Planejar a aquisição de bens</li>
+<li>Organizar orçamento e prazo</li>
+<li>Avaliar possibilidades de lance</li>
+<li>Conhecer taxas e condições antes de contratar</li>
 </ul>
-<p class="small">A contemplação não é imediata nem garantida em data determinada. Consulte as condições do contrato.</p>
-</div>
+<a class="btn gold" href="#simulacao">CONVERSE COM SERGIO</a>
 </div>
 </div>
 </section>
 
-<section id="simulacao">
+<section class="sim" id="simulacao">
 <div class="wrap">
-<h2>Solicite sua <span class="gold">simulação</span></h2>
-<p>Preencha os dados e receba atendimento personalizado.</p>
+<div class="head">
+<div class="kicker">Atendimento personalizado</div>
+<h2>Conte o que você deseja conquistar</h2>
+<p>Preencha os dados para iniciar uma conversa sobre as opções disponíveis.</p>
+</div>
+<div class="simgrid">
+<div class="intro">
+<h3>Vamos encontrar um caminho para seu projeto?</h3>
+<p>As informações ajudam a direcionar o atendimento. O envio não representa proposta, aprovação de crédito ou garantia de contemplação.</p>
+<p><b>Você poderá informar:</b><br>
+• Perfil PF ou PJ<br>
+• Categoria de interesse<br>
+• Valor aproximado do crédito<br>
+• Parcela desejada<br>
+• Cidade e objetivo</p>
+</div>
 
 <div class="form">
 <form id="leadForm">
-<label>Nome completo</label>
-<input id="nome" required placeholder="Seu nome">
+<div class="fields">
+<div class="field"><label for="nome">Nome completo *</label><input id="nome" autocomplete="name" required placeholder="Seu nome"></div>
+<div class="field"><label for="telefone">WhatsApp com DDD *</label><input id="telefone" type="tel" autocomplete="tel" required placeholder="(19) 99999-9999"></div>
+<div class="field"><label for="perfil">Você é</label><select id="perfil"><option>Pessoa Física</option><option>Pessoa Jurídica</option></select></div>
+<div class="field"><label for="cidade">Cidade/UF</label><input id="cidade" placeholder="Ex.: Campinas/SP"></div>
+<div class="field"><label for="interesse">Objetivo *</label>
+<select id="interesse">
+<option>Imóvel</option><option>Automóvel</option><option>Motocicleta</option><option>Caminhão</option><option>Máquinas agrícolas</option><option>Empresa / PJ</option><option>Terreno</option><option>Construção ou reforma</option><option>Outro</option>
+</select></div>
+<div class="field"><label for="credito">Valor aproximado do crédito</label>
+<select id="credito">
+<option>Até R$ 100 mil</option><option>R$ 100 mil a R$ 200 mil</option><option>R$ 200 mil a R$ 500 mil</option><option>R$ 500 mil a R$ 1 milhão</option><option>Acima de R$ 1 milhão</option><option>Ainda não defini</option>
+</select></div>
+<div class="field"><label for="parcela">Parcela desejada (opcional)</label><input id="parcela" placeholder="Ex.: R$ 1.000"></div>
+<div class="field"><label for="lance">Pretende ofertar lance?</label>
+<select id="lance">
+<option>Ainda não sei</option><option>Sim, com recursos próprios</option><option>Quero entender o lance embutido</option><option>Não pretendo ofertar lance</option>
+</select></div>
+<div class="field full"><label for="detalhes">Conte sobre seu projeto (opcional)</label><textarea id="detalhes" placeholder="Descreva seu objetivo ou dúvida"></textarea></div>
+</div>
 
-<label>WhatsApp</label>
-<input id="telefone" required placeholder="Seu telefone">
+<label class="consent">
+<input type="checkbox" id="consentimento" required>
+<span>Autorizo o uso dos dados informados para responder a esta solicitação e entrar em contato sobre meu interesse. Consulte a <a href="#privacidade">política de privacidade</a>.</span>
+</label>
 
-<label>Produto de interesse</label>
-<select id="produto">
-<option>Caminhões</option>
-<option>Agronegócio</option>
-<option>Máquinas agrícolas</option>
-<option>Imóveis</option>
-<option>Empresas PJ</option>
-<option>Automóveis</option>
-</select>
-
-<label>Valor aproximado do crédito</label>
-<input id="credito" placeholder="Ex.: R$ 300.000">
-
-<label>Cidade e estado</label>
-<input id="cidade" placeholder="Ex.: Campinas/SP">
-
-<button class="btn red" type="submit">ENVIAR SOLICITAÇÃO</button>
+<button class="btn gold" type="submit" style="width:100%">ENVIAR SOLICITAÇÃO PELO WHATSAPP</button>
+<p class="note">O site abrirá o WhatsApp com os dados para você revisar e confirmar o envio. Nesta versão, não há armazenamento próprio nem integração automática com CRM.</p>
 </form>
-<p class="small">Ao enviar, você será direcionado ao WhatsApp para revisar e confirmar a mensagem.</p>
+</div>
 </div>
 </div>
 </section>
 
-<section class="dark" id="contato">
-<div class="wrap about">
-<div>
-<h2>Sergio Moreno</h2>
-<h3 class="gold">Especialista em Consórcios Embracon</h3>
-<p>Atendimento consultivo para ajudar você a planejar suas conquistas e projetos.</p>
+<section id="sobre">
+<div class="wrap">
+<div class="head">
+<div class="kicker">Quem vai atender você</div>
+<h2>Atendimento próximo, claro e consultivo.</h2>
 </div>
+<div class="about">
+<div class="avatar">SM</div>
 <div>
-<h2>Vamos conversar?</h2>
-<a class="btn" href="https://wa.me/5519993602700">FALAR COM SERGIO</a>
-<p>WhatsApp: (19) 99360-2700</p>
-<p>E-mail: sergio.moreno@embracon.com.br</p>
+<h3>Sergio Moreno</h3>
+<b>Especialista em Consórcios Embracon</b>
+<p style="color:#657286">Meu trabalho é entender seus objetivos e apresentar possibilidades de consórcio de forma clara, considerando seu planejamento e as regras de cada grupo.</p>
+<a class="btn gold" href="#simulacao">SOLICITAR ATENDIMENTO</a>
+</div>
 </div>
 </div>
 </section>
+
+<section>
+<div class="wrap">
+<div class="head">
+<div class="kicker">Dúvidas frequentes</div>
+<h2>Informação para decidir com confiança.</h2>
+</div>
+<div class="faq">
+<details><summary>Consórcio tem juros?</summary><p>O consórcio não cobra juros de financiamento, mas possui taxa de administração e pode incluir fundo de reserva, seguro e outros encargos previstos em contrato.</p></details>
+<details><summary>Como acontece a contemplação?</summary><p>A contemplação ocorre por sorteio ou lance, conforme as regras do grupo e a disponibilidade de recursos. Não é possível garantir quando ela acontecerá.</p></details>
+<details><summary>O que é lance embutido?</summary><p>É a possibilidade de utilizar parte do próprio crédito como oferta de lance, quando permitida pelo grupo. Se vencedor, o valor utilizado reduz o crédito disponível.</p></details>
+<details><summary>Posso usar o FGTS?</summary><p>Em determinadas operações imobiliárias, o FGTS pode ser utilizado se forem atendidas as regras vigentes do fundo, do contrato e do sistema de consórcios. A elegibilidade precisa ser analisada.</p></details>
+<details><summary>Posso usar a carta para quitar financiamento?</summary><p>Em situações permitidas pela regulamentação e pelo contrato, pode ser possível quitar financiamento da mesma categoria, sujeito à análise e às exigências aplicáveis.</p></details>
+<details><summary>O valor da parcela pode mudar?</summary><p>As parcelas e o crédito podem sofrer reajustes conforme os critérios e índices previstos no contrato do grupo.</p></details>
+</div>
+</div>
+</section>
+
+<section class="privacy" id="privacidade">
+<div class="wrap">
+<div class="head">
+<div class="kicker">Privacidade</div>
+<h2>Como tratamos seus dados</h2>
+</div>
+<p>Os dados preenchidos no formulário são utilizados para preparar a mensagem de atendimento solicitada. Ao clicar em enviar, o site abre o WhatsApp com os dados informados para que você revise e confirme o envio. Nesta versão, o site não mantém banco de dados próprio nem envia automaticamente informações ao CRM. Evite incluir dados sensíveis ou informações financeiras confidenciais. O tratamento de dados deve observar a legislação aplicável, inclusive a Lei Geral de Proteção de Dados (LGPD). Antes de campanhas em maior escala, complemente esta política com os dados do controlador e os canais oficiais de privacidade.</p>
+</div>
+</section>
+
+<div class="band">
+<div class="wrap">
+<h2>Seu próximo projeto merece um bom planejamento.</h2>
+<p>Fale com Sergio Moreno e conheça as possibilidades.</p>
+<a class="btn gold" href="https://wa.me/5519993602700?text=Ol%C3%A1%20Sergio!%20Vim%20pelo%20seu%20site%20e%20quero%20conhecer%20as%20op%C3%A7%C3%B5es%20de%20cons%C3%B3rcio." target="_blank" rel="noopener">FALAR PELO WHATSAPP</a>
+</div>
+</div>
 </main>
 
 <footer>
 <div class="wrap">
-<b>SERGIO MORENO | CONSÓRCIOS EMBRACON</b>
-<p class="small">Consulte sempre as condições contratuais, taxas, reajustes e regras de contemplação.</p>
+<div class="footgrid">
+<div><a class="brand" href="#inicio">SERGIO MORENO<small>ESPECIALISTA EM CONSÓRCIOS</small></a><p>Atendimento consultivo para seus projetos pessoais e empresariais.</p></div>
+<div><b>CONTATO</b><p>WhatsApp: (19) 99360-2700</p><p>E-mail: sergio.moreno@embracon.com.br</p></div>
+<div><b>NAVEGAÇÃO</b><a href="#solucoes">Soluções</a><a href="#como">Como funciona</a><a href="#simulacao">Solicitar simulação</a><a href="#privacidade">Privacidade</a></div>
+</div>
+<div class="legal">© <span id="year"></span> Sergio Moreno. Todos os direitos reservados. Este site é um canal de atendimento e não substitui as informações e condições oficiais do contrato de consórcio.</div>
 </div>
 </footer>
 
-<a class="whatsapp" href="https://wa.me/5519993602700">WhatsApp</a>
+<a class="wa" href="https://wa.me/5519993602700?text=Ol%C3%A1%20Sergio!%20Vim%20pelo%20seu%20site." target="_blank" rel="noopener">WhatsApp ↗</a>
 
 <script>
+document.getElementById('year').textContent=new Date().getFullYear();
+
+document.querySelectorAll('[data-interest]').forEach(a=>{
+a.addEventListener('click',()=>{
+document.getElementById('interesse').value=a.dataset.interest;
+});
+});
+
 document.getElementById('leadForm').addEventListener('submit',function(e){
 e.preventDefault();
 
-const nome=document.getElementById('nome').value;
-const telefone=document.getElementById('telefone').value;
-const produto=document.getElementById('produto').value;
-const credito=document.getElementById('credito').value;
-const cidade=document.getElementById('cidade').value;
+if(!document.getElementById('consentimento').checked){
+alert('Marque a autorização para continuar.');
+return;
+}
 
-const mensagem=
-'Olá Sergio! Meu nome é '+nome+
-'. Meu WhatsApp é '+telefone+
-'. Tenho interesse em '+produto+
-'. Crédito desejado: '+credito+
-'. Cidade: '+cidade+
-'. Gostaria de receber uma simulação.';
+const ids=['nome','telefone','perfil','cidade','interesse','credito','parcela','lance','detalhes'];
+const labels=['Nome','WhatsApp','Perfil','Cidade/UF','Objetivo','Valor aproximado do crédito','Parcela desejada','Intenção de lance','Detalhes'];
 
-window.open(
-'https://wa.me/5519993602700?text='+encodeURIComponent(mensagem),
-'_blank'
-);
+let m='Olá Sergio! Vim pelo seu site e gostaria de conversar sobre consórcio.\n\n';
+
+ids.forEach((id,i)=>{
+let v=document.getElementById(id).value.trim();
+if(v)m+=labels[i]+': '+v+'\n';
+});
+
+m+='\nAutorizo o contato para atendimento desta solicitação.';
+
+window.open('https://wa.me/5519993602700?text='+encodeURIComponent(m),'_blank','noopener');
 });
 </script>
-
 </body>
 </html>
